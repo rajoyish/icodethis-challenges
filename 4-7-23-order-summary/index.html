@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary - July 4, 2023</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="order-card">
+      <div class="logo-container">
+        <img
+          class="pizza-hut-logo"
+          src="https://upload.wikimedia.org/wikipedia/sco/d/d2/Pizza_Hut_logo.svg"
+        />
+      </div>
+      <header class="company">
+        Your order from <br />
+        <span>Pizza Hut</span>
+      </header>
+
+      <article class="list-container">
+        <div class="item-container">
+          <h3 class="item-name">British Pizza | Medium</h3>
+          <div class="qty-controller">
+            <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+            <input type="text" class="quantity" value="1" />
+            <button class="qty-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="item-price">
+            <h3>$7,99</h3>
+            <button class="item-close-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="item-container">
+          <h3 class="item-name">Pizza Diavola | Medium</h3>
+          <div class="qty-controller">
+            <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+            <input type="text" class="quantity" value="1" />
+            <button class="qty-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="item-price">
+            <h3>$7,99</h3>
+            <button class="item-close-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <button class="beverage">
+          <span class="beverage-icon"
+            ><i class="fa-solid fa-bottle-water"></i
+          ></span>
+          Add a beverage
+        </button>
+        <div class="order-additions">
+          <div class="add-subtotal">Subtotal <span>$15,98</span></div>
+          <div class="add-shipping">Shipping <span>$2</span></div>
+          <div class="add-total_info">Total (TVA incl.) <span>$1798</span></div>
+        </div>
+        <button class="checkout">Checkout</button>
+      </article>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

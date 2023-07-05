@@ -1,0 +1,167 @@
+body {
+  background: rgb(252, 141, 97);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 202, 110, 1) 35%,
+    rgba(252, 141, 97, 1) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+article.list-container {
+  padding: 1rem;
+}
+
+.order-card {
+  width: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  -webkit-box-shadow: 9px 9px 36px -3px rgba(244, 151, 81, 0.26);
+  -moz-box-shadow: 9px 9px 36px -3px rgba(244, 151, 81, 0.26);
+  box-shadow: 9px 9px 36px -3px rgba(244, 151, 81, 0.26);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fb6849;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.pizza-hut-logo {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 1rem;
+  transform: translateY(50%);
+}
+
+header.company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+header.company span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.item-container .item-name {
+  font-weight: normal;
+  width: 100%;
+}
+
+.item-price h3 {
+  font-weight: normal;
+}
+
+.qty-controller {
+  display: flex;
+  height: 2rem;
+  margin: 0 2rem;
+}
+
+.item-price {
+  display: flex;
+}
+
+.item-price .item-icon {
+  margin-left: 1rem;
+}
+
+input.quantity {
+  width: 2rem;
+  text-align: center;
+  border: 2px solid #f4f4f6;
+  border-radius: 0.15rem;
+}
+
+.qty-btn {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-close-icon {
+  background-color: #f4f4f6;
+  border: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  color: #a5a9b6;
+}
+button {
+  cursor: pointer;
+}
+
+button.beverage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid lightgray;
+  background-color: #fff;
+  width: 12rem;
+  padding: 0.25rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+button .beverage-icon {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.order-additions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #f4f4f6;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.add-subtotal,
+.add-shipping,
+.add-total_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.checkout {
+  border: none;
+  background-color: #fb6849;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-weight: bold;
+}
