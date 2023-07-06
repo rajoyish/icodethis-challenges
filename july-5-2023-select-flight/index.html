@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Flight - July 5, 2023</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="flight-wrapper">
+      <section class="flight-details">
+        <div class="flight-container">
+          <div class="flight-logo">
+            <i class="fa-solid fa-plane flight-icon"></i>
+          </div>
+          <div class="flight-destination">
+            <h2>Bucharest | OTP</h2>
+            <div><i class="fa-solid fa-arrow-right destination-icon"></i></div>
+            <h2>Tenerife (Canary Islands) | TFS</h2>
+          </div>
+          <article class="flight-dates-wrapper">
+            <div class="flight-date-item">
+              <h3 class="flight-day">Tue 30, Apr</h3>
+              <p class="flight-info">No Flights</p>
+            </div>
+
+            <div class="flight-date-item outlined">
+              <h3 class="flight-day">Wed 01, May</h3>
+              <p class="flight-info">No Flights</p>
+            </div>
+
+            <div class="flight-date-item selected">
+              <h3 class="flight-day">Thu 02, May</h3>
+              <p class="flight-info">
+                From <br />
+                <span class="price">$264</span>
+              </p>
+            </div>
+
+            <div class="flight-date-item">
+              <h3 class="flight-day">Fri 03, May</h3>
+              <p class="flight-info">No Flights</p>
+            </div>
+
+            <div class="flight-date-item outlined">
+              <h3 class="flight-day">Sat 04, May</h3>
+              <p class="flight-info">
+                From <br />
+                <span class="price">$264</span>
+              </p>
+            </div>
+
+            <div class="flight-date-item">
+              <h3 class="flight-day">Sun 05, May</h3>
+              <p class="flight-info">No Flights</p>
+            </div>
+
+            <button class="carousels-button carousels-button--prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="carousels-button carousels-button--next">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </article>
+          <aside class="arrival-departure-wrapper">
+            <div class="arrival-wrapper">
+              <p class="arrival-date">Thu, 02, May 2023</p>
+              <h3 class="arrival-time">13:40</h3>
+              <span class="arrival-place">BUCHAREST</span>
+            </div>
+
+            <div class="flight-hours">
+              <h2>6h 15m</h2>
+              <hr class="flight-separator" />
+            </div>
+
+            <div class="departure-wrapper">
+              <p class="departure-date">Thu, 02, May 2023</p>
+              <h3 class="departure-time">17:55</h3>
+              <span class="departure-place">TENERIFE (CANARY ISLANDS)</span>
+            </div>
+          </aside>
+          <div class="submit-button">
+            <button>SELECT BUNDLE</button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
